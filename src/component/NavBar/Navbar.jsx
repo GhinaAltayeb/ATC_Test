@@ -10,7 +10,8 @@ const links = [
     { label: "Team", href: "#team" },
     { label: "Customers", href: "#customers" },
     { label: "Projects", href: "#projects" },
-    { label: (<><IoMdPhonePortrait size={15} fill="var(--color-gray)" className="inline-block mr-2" /> 1-300-123-1234</>), href: "#footer" }
+    { label: (<><IoMdPhonePortrait size={15} fill="var(--color-gray)" className="inline-block mr-2" /> 1-300-123-1234</>), href: "#footer" },
+    { label: "Table", href: "/ATC_Test/table" }
 ]
 
 export default function Navbar() {
@@ -33,7 +34,7 @@ export default function Navbar() {
                         animate={{ y: 0, opacity: 1 }}
                         exit={{ y: -180, opacity: 0 }}
                         transition={{ duration: 0.4, ease: "easeInOut" }}
-                        className="fixed left-1/3 w-xl h-[100px] inset-0 z-40 font-semibold
+                        className="fixed left-1/3 w-2xl h-[100px] inset-0 z-40 font-semibold
                         bg-white flex items-center justify-center gap-5 max-md:hidden"
                     >
                         <button

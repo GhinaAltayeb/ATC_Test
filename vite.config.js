@@ -10,5 +10,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "ATC_Test",
+  base: "/ATC_Test/",
 });
