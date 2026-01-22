@@ -1,0 +1,14 @@
+.customers-swiper .swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    right: 0px;
+    width: fit-content;
+    left: auto;
+    bottom: 95px;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--dark-gray);
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--color-secondary);
+}

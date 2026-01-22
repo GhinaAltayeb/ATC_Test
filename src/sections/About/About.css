@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@tailwind utilities;
+@custom-variant dark (&:is(.dark *));
+
+form input{
+    @apply border-b py-1 w-76 ;
+    border-color: #c4c4c480;
+}
+form input::placeholder{
+    @apply text-white ;
+}

@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@tailwind utilities;
+@custom-variant dark (&:is(.dark *));
+
+.footer-section h5{
+    @apply text-white opacity-60 mb-2 md:mb-4;
+    font-size: var(--text-medium)
+}
+
+.footer-section ul li{
+    @apply text-white;  
+    font-size: var(--text-medium);
+}

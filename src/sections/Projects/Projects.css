@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@tailwind utilities;
+@custom-variant dark (&:is(.dark *));
+
+.projects-swiper .swiper-slide {
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+}
+
+.projects-swiper .swiper-slide .black-div {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.projects-swiper .swiper-slide-active .black-div {
+    transition-delay: 1s;
+}
+
+.projects-swiper .swiper-slide-active,
+.projects-swiper .swiper-slide-active .black-div {
+    opacity: 1;
+}
+
+.projects-swiper .swiper-slide .view-btn {
+    transform: translate(100%, 100%);
+    transition: transform 0.3s ease 1s, background-color 0.3s ease;
+}
+
+.projects-swiper .swiper-slide-active .view-btn {
+    transform: translate(0, 0);
+}
+
+.projects-swiper .swiper-slide-active .view-btn:hover {
+    background-color: var(--color-primary);
+}
+
+.projects-swiper .swiper-pagination,
+.hero-swiper .swiper-pagination {
+    @apply lg:hidden right-1/2 translate-x-1/2
+}
+
+.projects-swiper .swiper-pagination-bullets.swiper-pagination-horizontal,
+.hero-swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+    @apply bottom-0
+}
+
+
+
+.projects-section .swiper-buttons {
+    @apply max-lg:hidden;
+    position: absolute;
+    right: 24%;
+    bottom: 35%;
+    z-index: 1000;
+}
+
+.projects-section .swiper-buttons button {
+    border-color: var(--color-gray) !important;
+    border-width: 2px;
+}
+
+.projects-section .swiper-buttons button svg {
+    transition: all 0.3s ease-in;
+}
+
+.projects-section .swiper-buttons button:hover svg {
+    fill: var(--color-secondary)
+}
+
+.black-div {
+    @apply px-7 py-5 lg:py-10 max-lg:w-full max-lg:text-center lg:absolute z-10000 top-[50%] lg:-translate-y-[50%] -left-[25%];
+    background-color: var(--color-primary);
+}
+
+.view-btn {
+    @apply flex items-center justify-center p-2 size-9 absolute bottom-0 right-0
+}
+
+.yarl__container {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.yarl__slide_image {
+    max-width: none;
+    max-height: none;
+}

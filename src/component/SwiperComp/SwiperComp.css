@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@tailwind utilities;
+@custom-variant dark (&:is(.dark *));
+
+
+.balance-swiper {
+    position: relative;
+    /* padding-bottom: 3rem; */
+    /* padding: 0rem 3rem; */
+    text-align: center;
+}
+
+.balance-swiper .swiper-slide {
+    /* background-color: var(--bg-grey); */
+    padding: 0rem 3rem;
+}
+
+/* .balance-swiper .swiper-initialized{
+    height: 100%;
+} */
+
+.balance-swiper .custom-prev,
+.balance-swiper .custom-next {
+    position: absolute;
+    top: 63%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.balance-swiper .custom-prev {
+    left: 0px;
+}
+
+.balance-swiper .custom-next {
+    right: 0px;
+}
+
+.balance-swiper .swiper-pagination {
+    bottom: 0px;
+}
+
+.mySwiper.pagination-top .swiper-pagination {
+    top: 8px;
+    bottom: auto;
+}
+
+/* Bullet styling; color is controlled via --swiper-pagination-color */
+.mySwiper .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    opacity: 0.5;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+    opacity: 1;
+}

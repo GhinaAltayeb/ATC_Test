@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@tailwind utilities;
+@custom-variant dark (&:is(.dark *));
+
+.our-team-section .svg-hover{
+    position: relative;
+    z-index: 100;
+    transition: all 0.1s linear;
+}
+.our-team-section .svg-hover:hover{
+    fill: var(--color-secondary);
+    cursor: pointer;
+}
